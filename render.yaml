@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: runak-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: API_NAME
+        value: "🫧🦋 ʀuɴAk API"
+      - key: ADMIN_KEY
+        sync: false
+      - key: DEFAULT_DAILY_LIMIT
+        value: "1000"
